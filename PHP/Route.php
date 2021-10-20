@@ -5,3 +5,5 @@ class Route {
     public $start = float;
     public $end = float;
 }
+
+?>

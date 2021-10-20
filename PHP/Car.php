@@ -14,7 +14,8 @@ class Car {
     }
 
     public function printDataCar(){
-        echo "license is: ".$this->license.", the conductor is: ". $this->driver->name.
-        " and the document is: ". $this->driver->document ."<br>";
+        echo "Licencia: ".$this->license.", Driver: ". $this->driver->name."<br>";
     }
 }
+
+?>
