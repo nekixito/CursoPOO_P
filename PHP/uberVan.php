@@ -1,6 +1,6 @@
 <?php
 require_once('car.php');
-class UberBlack extends Car {
+class UberVan extends Car {
     public $typeCarAccepted;
     public $seatsMaterial;
 
@@ -10,6 +10,27 @@ class UberBlack extends Car {
         $this->seatsMaterial = $seatsMaterial;
     }
 
+    public function setPassenger($passenger) {
+        if ($passenger == 6) {
+            $this->passenger = $passenger;
+        }
+        else {
+            echo "Necesitas asignar 6 pasajeros ";
+        }
+    
+    }
 
+    public function printDataCar() {
+        if ($this->passenger == 6) {
+        echo "
+            Licencia: $this->license 
+            Driver: {$this->driver->name} 
+            Número de pasajeros: $this->passenger
+            <br>
+    
+        ";}else{
+            echo "<br>";
+        }
+    }
 }
 ?>
